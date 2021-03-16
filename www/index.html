@@ -22,13 +22,64 @@
 </head>
 
 <body>
-    <div class="app">
-        <h1>Apache Cordova</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
-    </div>
+
+    <div data-role="page" id="login">
+
+        <div data-role="header">
+            <h1>Login</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <label for="userName">User Name:</label>
+            <input type="text" name="userName" id="userName" value="" autocomplete="off">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" value="" autocomplete="off">
+
+            <!-- <a href="#" class="ui-btn">Login</a> -->
+            <button class="ui-btn" id="login_btn">Button</button>
+
+            <!-- <a href="#" class="ui-btn">Signup</a> -->
+            <button class="ui-btn" id="signup_btn">Signup</button>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <!-- Start of second page -->
+    <div data-role="page" id="signin">
+
+        <div data-role="header">
+            <h1>Sign In</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <!-- Start of third page -->
+    <div data-role="page" id="listPage">
+
+        <div data-role="header">
+            <h1>List</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
     <script src="cordova.js"></script>
     <script src="js/index.js"></script>
 </body>
