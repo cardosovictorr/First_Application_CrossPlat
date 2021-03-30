@@ -22,16 +22,7 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+    
 }
 
 /* Landscape layout (with min-width) */
@@ -91,3 +82,56 @@ h1 {
         background-image:linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);
     }
 }
+
+
+.logo_image{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
+
+/* Removing margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    /* cursor: pointer; */
+    /* position: relative; */
+    padding: 12px 8px 12px 40px;
+    background: rgb(180, 233, 149);
+    font-size: 18px;
+    transition: 0.2s;
+    /*removing the bullet points from the list*/
+    list-style-type: none;
+  }
+  
+  /* making every item of the list different. Below making the odd numbers in the list blue */
+  ul li:nth-child(odd) {
+    background: #a1edf7;
+  }
+  
+  /* making  */
+  ul li:hover {
+    background: rgb(255, 173, 173);
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.completed {
+    background: rgb(61, 88, 119);
+    color: rgb(234, 248, 196);
+    text-decoration: line-through;
+  }
+  
+  /* Style the close button */
+  .deleting {
+    padding: 12px 16px 12px 16px;
+  }
+  
+  /*The following only works for browser*/
+  .deleting:hover {
+    background-color: #fc0404;
+    color: white;
+  }
